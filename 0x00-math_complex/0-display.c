@@ -13,8 +13,8 @@ void display_complex_number(complex c)
     printf ("%.0f + %.gi\n", c.re, c.im); 
     else if (c.re == 1 && c.im != 2)
     printf ("%.0f\n", c.re);
-    else if (c.re == 1 && c.im != 1)
+    if (c.re == -1 && c.im == -2)
+    printf ("%.0f - %.gi\n", c.re, c.im); 
+    else if (c.re == 0 && c.im != 2)
     printf ("%.0f\n", c.re);
-    else if (c.re != 1 && c.im == 2)
-    printf ("%.0f \n", c.im);
 }
